@@ -1,0 +1,25 @@
+@prefix elmo: <http://dotwebstack.org/def/elmo#> .
+@prefix config: <http://dotwebstack.org/configuration/>.
+
+GRAPH config:Theatre {
+
+  config:GeoAppearanceData a elmo:InformationProduct;
+    elmo:backend config:FusekiBackend;
+    elmo:query """
+      prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+      prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+      prefix elmo1: <http://bp4mc2.org/elmo/def#>
+      CONSTRUCT {
+        <urn:location> rdfs:label "Location";
+#            geo:lat "52.155";
+#            geo:long "5.38";
+            geo:geometry "POINT(5.38 52.155)";
+            elmo1:style <urn:red>
+        .
+        <urn:red> elmo1:name "red".
+      }
+      WHERE {}
+    """
+  .
+
+}
