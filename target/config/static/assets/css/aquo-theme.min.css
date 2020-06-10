@@ -1,0 +1,670 @@
+
+
+html {
+    position: relative;
+    min-height: 100%
+}
+
+body {
+    margin-bottom: 25px;
+    background-color: #f0f0f0;
+    color: #555555;
+    font-size: 13px;
+    overflow-x: hidden;
+}
+
+body, h1, h2, h2 a, h2 a:visited, h3, h4, h5, h6, p, select, textarea {
+    color: #555;
+    font-family: Arial, Helvetica, Tahoma, sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 20px;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h2 a,
+h2 a:visited {
+    color: #333;
+    font-family: 'Droid Sans', arial, serif;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+h1 {
+	color: #003b89;
+	font-size: 22px;
+	font-weight: bold;
+	font-variant: normal;
+}
+
+h1, h2 {
+    border-bottom: 1px dotted #ccc;
+    margin: 0 0 15px;
+    padding: 15px 0 5px;
+}
+h3, h4 {
+	color: #C43D00;
+	font-size: 16px;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+a,
+a:visited {
+	color: #0043A8;
+	text-decoration: underline;
+}
+a:hover {
+    text-decoration: none;
+}
+
+/*PAGE*/
+#page {
+	width: 100%;
+	position: relative;
+}
+
+
+
+/*NAV*/
+.navbar {
+	background: #444444;
+	background: -moz-linear-gradient(top, #444444 0%, #333333 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, #444444), color-stop(100%, #333333));
+	background: -webkit-linear-gradient(top, #444444 0%, #333333 100%);
+	background: -o-linear-gradient(top, #444444 0%, #333333 100%);
+	background: -ms-linear-gradient(top, #444444 0%, #333333 100%);
+	background: linear-gradient(to bottom, #444444 0%, #333333 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#444444', endColorstr='#333333', GradientType=0 );
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    font-family: 'Droid Sans', arial, serif;
+    font-size: 13px;
+    color: #fff;
+    padding: 0 22px;
+    width: 100%;
+    position: relative;
+}
+.navbar-default .navbar-nav > li > a,
+.navbar-default a.navbar-brand {
+	color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.navbar-default .navbar-nav .dropdown-menu > li > a {
+	text-decoration: none;
+	color: #333333;
+}
+.navbar-default a.navbar-brand:hover,
+.navbar-default a.navbar-brand:focus,
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:focus, 
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav>.open>a, 
+.navbar-default .navbar-nav>.open>a:focus, 
+.navbar-default .navbar-nav>.open>a:hover,
+.navbar-default .navbar-nav>li>a:focus, 
+.navbar-default .navbar-nav>li>a:hover,
+.dropdown-menu {
+	color: #333333;
+	background-color: #f0f0f0;
+}
+.navbar-default .navbar-nav li {
+	border: 1px solid #222222;
+	border-top: none;
+	border-bottom: none;
+	height: 48px;
+}
+.navbar-default .navbar-nav li.active,
+.navbar-default .navbar-nav li:hover,
+.navbar-default .navbar-nav li:focus,
+.navbar-default button:hover,
+.navbar-default button:focus {
+	border-right: 1px solid #f0f0f0;
+	border-left: 1px solid #f0f0f0;
+}
+.navbar-default .navbar-nav .dropdown-menu li {
+	border: 1px solid #dddddd;
+	border-top: 0;
+	height: auto;
+}
+.navbar-default .form-control,
+.navbar-default .btn {
+	border-radius: 0;
+}
+.dropdown-menu {
+	border-radius: unset;
+	border-top: 0;
+	padding-bottom: 0;
+}
+.dropdown-menu>li>a:focus, 
+.dropdown-menu>li>a:hover {
+	background-color: #ffffff;
+}
+
+
+
+/*CONTENT*/
+.container {
+	padding-left: 0;
+	padding-right: 0;
+}
+.panel {
+	border: 0;
+	background-color: transparent;
+}
+.panel-heading,
+.container .nav-tabs {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.panel-primary {
+	border-color: #01408d;
+}
+.panel-primary>.panel-heading {
+	background-color: #01408d;
+	border-color: #01408d;
+}
+.panel-body,
+.container .dataTables_wrapper {
+	background-color: #ffffff;
+	border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.container .nav-tabs,
+.container .dataTables_wrapper {
+	background-color: #ffffff;
+	padding: 15px;
+}
+/*FOOTER*/
+.footer {
+	position: relative;
+	background-color: #01408d;
+	padding: 20px;
+	border-radius: 10px;
+}
+.footer a {
+	color: #fff;
+	text-decoration: none;
+}
+.footer a:hover {
+	color: #00d2ff;
+	text-decoration: underline;
+}
+.footer p {
+	color: #ffffff;
+}
+.footer.bg-primary h4 {
+	color: #ffa700;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    border-bottom: 1px dotted #ccc;
+    font-size: 16px;
+    margin: 0 0 10px;
+    padding: 0 0 4px 0;
+    text-transform: uppercase;
+}
+
+@media(min-width:1280px) {
+    .container {
+        width: auto;
+    }
+	#page {
+		width: 75%;
+		margin: 25px auto;
+	}
+}
+
+@media (min-width: 1200px){
+	.container {
+	    width: auto;
+	}
+}
+@media (min-width: 992px) {
+	.container {
+	    width: auto;
+	}
+	.navbar {	
+		height: 50px;
+		top: -1px;
+	}
+}
+@media (min-width: 768px) {
+	.container {
+	    width: auto;
+	}
+}
+
+@media (max-width: 767px) {
+	.hidden-xs {
+	    display: inline-block !important;
+	}
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+		color: #ffffff;
+	}
+	.navbar-default .navbar-nav .dropdown-menu li {
+		border-left: 0;
+		border-right: 0;
+	}
+	.navbar-default .navbar-nav li {
+		height: auto;
+	}
+	.navbar-default .navbar-collapse, .navbar-default .navbar-form,
+	.navbar-default .navbar-nav .dropdown-menu li,
+	.navbar-default .navbar-nav li,
+	.navbar-default .navbar-nav li.active, 
+	.navbar-default .navbar-nav li:hover, 
+	.navbar-default .navbar-nav li:focus, 
+	.navbar-default button:hover, 
+	.navbar-default button:focus {
+		border-color: #333333;
+	}
+	.navbar-default .navbar-nav .open .dropdown-menu>.active>a, 
+	.navbar-default .navbar-nav .open .dropdown-menu>.active>a:focus, 
+	.navbar-default .navbar-nav .open .dropdown-menu>.active>a:hover {
+		background-color: #f0f0f0;
+	}
+	.navbar-default .navbar-toggle {
+		border-color: transparent;
+		background-color: #dddddd;
+	}
+}
+
+
+
+
+
+
+.footer>.container {
+    font-size: 90%
+}
+
+.footer.bg-primary a {
+    color: #fff
+}
+
+.table-bordered>tbody>tr>td>table>tbody>tr>td {
+    padding-right: 8px;
+    vertical-align: top
+}
+
+.carousel-indicators {
+    margin-bottom: -10px!important;
+    bottom: 0!important
+}
+
+.carousel-indicators li {
+    border-color: #337ab7!important
+}
+
+.carousel-indicators .active {
+    background-color: #337ab7!important
+}
+
+.htmlapp table tr td {
+    border-color: #a0a0a0!important;
+    border-width: 1px;
+    border-style: solid;
+    padding: 2px
+}
+
+.innerFrame {
+    width: 100%;
+    height: 50px;
+    border: 0;
+    overflow: hidden
+}
+
+.frameScrollAppearance {
+    width: 50%;
+    float: left
+}
+
+.frameFixedAppearance {
+    width: 50%;
+    float: right;
+    right: 15px;
+    position: fixed
+}
+
+.leaflet-label {
+    color: #111;
+    display: block;
+    font: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-size: 10px!important;
+    font-weight: normal;
+    padding: 0;
+    position: absolute
+}
+
+.leaflet-bar button,
+.leaflet-bar button:hover {
+    background-color: #fff;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: black
+}
+
+.leaflet-bar button {
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: block
+}
+
+.leaflet-bar button:hover {
+    background-color: #f4f4f4
+}
+
+.leaflet-bar button:first-of-type {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px
+}
+
+.leaflet-bar button:last-of-type {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom: 0
+}
+
+.leaflet-bar.disabled,
+.leaflet-bar button.disabled {
+    cursor: default;
+    pointer-events: none;
+    opacity: .4
+}
+
+.easy-button-button .button-state {
+    display: block;
+    width: 100%;
+    heigth: 100%;
+    position: relative
+}
+
+.leaflet-touch .leaflet-bar button {
+    width: 30px;
+    height: 30px;
+    line-height: 30px
+}
+
+.nav-tabs li a {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 0
+}
+
+.basic-text-table td:first-child {
+    width: 150px;
+    vertical-align: top
+}
+
+.nav-tree {
+    color: #6c7587;
+    background-color: #fff;
+    padding: 20px 10px 30px
+}
+
+.nav-tree a {
+    color: #585858;
+    cursor: pointer
+}
+
+.nav-tree a:hover {
+    text-decoration: none
+}
+
+.nav-tree a.selected {
+    color: #2ab2ea
+}
+
+.nav-tree ul,
+.nav-tree li {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+.nav-tree ul {
+    padding-left: 1em
+}
+
+.nav-tree ul li:last-child>ul {
+    border-left: 1px solid #fff;
+    margin-left: -15px
+}
+
+.nav-tree li {
+    padding-left: 1em;
+    border: 1px solid #c9c9c9;
+    border-top: 0;
+    border-right: 0;
+    padding-top: 10px
+}
+
+.nav-tree li.has-child {
+    border-bottom: 0;
+    position: relative
+}
+
+.nav-tree li.has-child i {
+    position: absolute;
+    left: -.5em;
+    top: 1.3em;
+    color: #c9c9c9;
+    cursor: pointer;
+    background-color: #fff;
+    z-index: 1
+}
+
+.nav-tree li.has-child.tree-collapsed {
+    border-bottom: 1px solid #c9c9c9
+}
+
+.nav-tree li p {
+    margin: 0;
+    background: white;
+    position: relative;
+    top: .5em;
+    line-height: 1;
+    z-index: 1
+}
+
+.nav-tree li ul {
+    border-top: 1px solid #c9c9c9;
+    margin-left: -1em;
+    padding-left: 2em
+}
+
+#chart .bar {
+    fill: steelblue
+}
+
+#chart .axis text {
+    font: 10px sans-serif
+}
+
+#chart .axis path,
+#chart .axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges
+}
+
+#chart .x.axis path {
+    display: none
+}
+
+#textdoc p.title {
+    font-weight: bold
+}
+
+#textdoc tr.title {
+    font-weight: bold
+}
+
+#textdoc p.break {
+    margin-bottom: .5em
+}
+
+#textdoc ul.fragment {
+    list-style-type: none
+}
+
+#textdoc table.fragment {
+    margin-bottom: 10px
+}
+
+#textdoc table.fragment tr td {
+    padding: 3px;
+    border: 1px solid #d9d9d9
+}
+
+#textdoc .marker {
+    display: -moz-inline-block;
+    display: -moz-inline-box;
+    display: inline-block;
+    font-weight: bold;
+    left: -40px;
+    width: 40px;
+    margin-right: -40px;
+    position: relative
+}
+
+#textdoc .mapbody {
+    height: 400px;
+    max-width: 600px;
+    margin-bottom: 10px
+}
+
+#textdoc .maptitle {
+    background: lightgray;
+    max-width: 600px
+}
+
+.legend text {
+    line-height: normal;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size-adjust: none;
+    font-stretch: normal;
+    font: 10px sans-serif
+}
+
+.link line.border {
+    stroke: #fff;
+    stroke-opacity: 0;
+    stroke-width: 8px
+}
+
+.link line.stroke {
+    pointer-events: none;
+    stroke-width: 1px;
+    stroke: #696969
+}
+
+.link text {
+    pointer-events: none
+}
+
+.node text {
+    pointer-events: none
+}
+
+.node .node-text,
+.stroke-text {
+    color: #000;
+    font: 10px sans-serif
+}
+
+.canvas {
+    fill: none;
+    pointer-events: all
+}
+
+.default {
+    fill: white;
+    fill-opacity: .3;
+    stroke: #666
+}
+
+div.detailbox {
+    background-color: black;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    font-size: .8em;
+    top: 5px;
+    right: 5px;
+    width: 300px;
+    padding: 5px;
+    position: absolute
+}
+
+div.detailbox div.header {
+    color: white;
+    font-weight: bold;
+    margin: 0 0 5px
+}
+
+div.detailbox div.button {
+    height: 30px;
+    padding: 0
+}
+
+div.detailbox table {
+    width: 100%;
+    background-color: white;
+    table-layout: fixed;
+    word-wrap: break-word
+}
+
+div.detailbox table tr td.data {
+    width: 80%
+}
+
+div.detailbox div.button #expand {
+    padding: 5px;
+    float: right;
+    text-align: right;
+    z-index: 5000;
+    background-color: #808080;
+    border-color: #808080;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    padding-left: 15px;
+    text-indent: -10px;
+    font-weight: bold
+}
+
+div.infobox {
+    background-color: #808080;
+    border-color: #808080;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    -moz-border-radius: 5px
+}
+
+div.infobox table {
+    margin-top: 5px;
+    margin-bottom: 5px
+}
+
+div.infobox table tr td {
+    padding-left: 5px;
+    padding-right: 5px
+}
